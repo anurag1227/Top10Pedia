@@ -1,0 +1,12 @@
+c:\users\amohan\documents\TopTenPedia\TopTenPedia\bin\Debug\netcoreapp1.1\TopTenPedia.deps.json
+c:\users\amohan\documents\TopTenPedia\TopTenPedia\bin\Debug\netcoreapp1.1\TopTenPedia.runtimeconfig.json
+c:\users\amohan\documents\TopTenPedia\TopTenPedia\bin\Debug\netcoreapp1.1\TopTenPedia.runtimeconfig.dev.json
+c:\users\amohan\documents\TopTenPedia\TopTenPedia\bin\Debug\netcoreapp1.1\TopTenPedia.dll
+c:\users\amohan\documents\TopTenPedia\TopTenPedia\bin\Debug\netcoreapp1.1\TopTenPedia.pdb
+c:\users\amohan\documents\TopTenPedia\TopTenPedia\bin\Debug\netcoreapp1.1\TopTenPediaData.dll
+c:\users\amohan\documents\TopTenPedia\TopTenPedia\bin\Debug\netcoreapp1.1\TopTenPediaData.pdb
+c:\users\amohan\documents\TopTenPedia\TopTenPedia\obj\Debug\netcoreapp1.1\TopTenPedia.csprojResolveAssemblyReference.cache
+c:\users\amohan\documents\TopTenPedia\TopTenPedia\obj\Debug\netcoreapp1.1\TopTenPedia.AssemblyInfo.cs
+c:\users\amohan\documents\TopTenPedia\TopTenPedia\obj\Debug\netcoreapp1.1\TopTenPedia.dll
+c:\users\amohan\documents\TopTenPedia\TopTenPedia\obj\Debug\netcoreapp1.1\TopTenPedia.pdb
+c:\users\amohan\documents\TopTenPedia\TopTenPedia\obj\Debug\netcoreapp1.1\UserSecretsAssemblyInfo.cs
