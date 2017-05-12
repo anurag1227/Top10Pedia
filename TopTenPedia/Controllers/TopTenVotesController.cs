@@ -54,7 +54,7 @@ namespace TopTenPedia.Controllers
         // more details see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Create([Bind("ID,Name,Description")] TopTenVote topTenVote)
+        public async Task<IActionResult> Create([Bind("ID,Name,Description")] TopTenVote topTenVote, string Options)
         {
             if (ModelState.IsValid)
             {

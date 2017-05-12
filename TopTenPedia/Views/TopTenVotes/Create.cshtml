@@ -9,33 +9,63 @@
 <h2>Create</h2>
 
 <form asp-action="Create">
-    <div class="form-horizontal">
-        <h4>TopTenVote</h4>
-        <hr />
-        <div asp-validation-summary="ModelOnly" class="text-danger"></div>
-        <div class="form-group">
-            <label asp-for="Name" class="col-md-2 control-label"></label>
-            <div class="col-md-10">
-                <input asp-for="Name" class="form-control" />
-                <span asp-validation-for="Name" class="text-danger"></span>
-            </div>
-        </div>
-        <div class="form-group">
-            <label asp-for="Description" class="col-md-2 control-label"></label>
-            <div class="col-md-10">
-                <input asp-for="Description" class="form-control" />
-                <span asp-validation-for="Description" class="text-danger"></span>
-            </div>
-        </div>
-        <div class="form-group">
-            <div class="col-md-offset-2 col-md-10">
-                <input type="submit" value="Create" class="btn btn-default" />
-            </div>
-        </div>
-    </div>
+	<div class="form-horizontal">
+		<h4>TopTenVote</h4>
+		<hr />
+		<div asp-validation-summary="ModelOnly" class="text-danger"></div>
+		<div class="form-group">
+			<label asp-for="Name" class="col-md-2 control-label"></label>
+			<div class="col-md-10">
+				<input asp-for="Name" class="form-control" />
+				<span asp-validation-for="Name" class="text-danger"></span>
+			</div>
+		</div>
+		<div class="form-group">
+			<label asp-for="Description" class="col-md-2 control-label"></label>
+			<div class="col-md-10">
+				<input asp-for="Description" class="form-control" />
+				<span asp-validation-for="Description" class="text-danger"></span>
+			</div>
+		</div>
+		<div class="form-group">
+			<div class="col-md-offset-2 col-md-10">
+				@*<table>
+					<thead>
+						<tr>
+							<th>Options</th>
+							<th></th>
+						</tr>
+					</thead>
+					<tbody data-bind="foreach: AvailableOptions">
+						<tr>
+							<td><input class="input-sm" data-bind="value: name" /></td>
+						</tr>
+					</tbody>
+					<tbody></tbody>
+				</table>*@
+<ul data-bind="template: {name:'listTemplate',foreach:AvailableOptions}"></ul>
+<script id="listTemplate" type="text/html">
+	<li><input class="input-sm"  data-bind="value: name" /></li>
+	<li><input class="input-lg"  data-bind="value: Description" /></li>
+	<li><input class="input-sm"  data-bind="value: ImageURL" /></li>
+</script>
+
+				<input type ="hidden"  name="Options" data-bind="value: ko.toJSON(AvailableOptions)"/>
+				</div>
+			</div>
+
+		
+
+				<button class="btn-success" data-bind="click: addOption">Add Option</button>
+				<div class="form-group">
+					<div class="col-md-offset-2 col-md-10">
+						<input type="submit" value="Create" class="btn btn-default" />
+					</div>
+				</div>
+			</div>
 </form>
 
-<h2>Hello <span data-bind="text: name"></span></h2>
+
 
 @*<button data-bind="click: addItem">Add Item</button>
 <ul data-bind="template: {name:'listTemplate',foreach:list}"></ul>
