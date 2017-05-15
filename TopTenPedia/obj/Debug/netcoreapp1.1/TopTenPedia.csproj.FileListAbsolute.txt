@@ -10,3 +10,15 @@ c:\users\amohan\documents\TopTenPedia\TopTenPedia\obj\Debug\netcoreapp1.1\TopTen
 c:\users\amohan\documents\TopTenPedia\TopTenPedia\obj\Debug\netcoreapp1.1\TopTenPedia.dll
 c:\users\amohan\documents\TopTenPedia\TopTenPedia\obj\Debug\netcoreapp1.1\TopTenPedia.pdb
 c:\users\amohan\documents\TopTenPedia\TopTenPedia\obj\Debug\netcoreapp1.1\UserSecretsAssemblyInfo.cs
+C:\Users\DEEL\Documents\Top10Pedia\Top10Pedia\TopTenPedia\bin\Debug\netcoreapp1.1\TopTenPedia.deps.json
+C:\Users\DEEL\Documents\Top10Pedia\Top10Pedia\TopTenPedia\bin\Debug\netcoreapp1.1\TopTenPedia.runtimeconfig.json
+C:\Users\DEEL\Documents\Top10Pedia\Top10Pedia\TopTenPedia\bin\Debug\netcoreapp1.1\TopTenPedia.runtimeconfig.dev.json
+C:\Users\DEEL\Documents\Top10Pedia\Top10Pedia\TopTenPedia\bin\Debug\netcoreapp1.1\TopTenPedia.dll
+C:\Users\DEEL\Documents\Top10Pedia\Top10Pedia\TopTenPedia\bin\Debug\netcoreapp1.1\TopTenPedia.pdb
+C:\Users\DEEL\Documents\Top10Pedia\Top10Pedia\TopTenPedia\bin\Debug\netcoreapp1.1\TopTenPediaData.dll
+C:\Users\DEEL\Documents\Top10Pedia\Top10Pedia\TopTenPedia\bin\Debug\netcoreapp1.1\TopTenPediaData.pdb
+C:\Users\DEEL\Documents\Top10Pedia\Top10Pedia\TopTenPedia\obj\Debug\netcoreapp1.1\TopTenPedia.csprojResolveAssemblyReference.cache
+C:\Users\DEEL\Documents\Top10Pedia\Top10Pedia\TopTenPedia\obj\Debug\netcoreapp1.1\UserSecretsAssemblyInfo.cs
+C:\Users\DEEL\Documents\Top10Pedia\Top10Pedia\TopTenPedia\obj\Debug\netcoreapp1.1\TopTenPedia.AssemblyInfo.cs
+C:\Users\DEEL\Documents\Top10Pedia\Top10Pedia\TopTenPedia\obj\Debug\netcoreapp1.1\TopTenPedia.dll
+C:\Users\DEEL\Documents\Top10Pedia\Top10Pedia\TopTenPedia\obj\Debug\netcoreapp1.1\TopTenPedia.pdb

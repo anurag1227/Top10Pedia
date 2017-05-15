@@ -7,6 +7,7 @@ using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
 using TopTenPedia.Data;
 using TopTenPediaData;
+using Newtonsoft.Json;
 
 namespace TopTenPedia.Controllers
 {
@@ -33,7 +34,7 @@ namespace TopTenPedia.Controllers
                 return NotFound();
             }
 
-            var topTenVote = await _context.TopTenVotes
+            var topTenVote = await _context.TopTenVotes.Include(o=>o.Options)
                 .SingleOrDefaultAsync(m => m.ID == id);
             if (topTenVote == null)
             {
@@ -56,8 +57,12 @@ namespace TopTenPedia.Controllers
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> Create([Bind("ID,Name,Description")] TopTenVote topTenVote, string Options)
         {
-            if (ModelState.IsValid)
+			List<Option> options = JsonConvert.DeserializeObject<List<Option>>(Options);
+			
+
+			if (ModelState.IsValid)
             {
+				topTenVote.Options = options;
                 _context.Add(topTenVote);
                 await _context.SaveChangesAsync();
                 return RedirectToAction("Index");

@@ -7075,15 +7075,15 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\amohan\\.nuget\\packages\\": {}
+    "C:\\Users\\DEEL\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\amohan\\Documents\\TopTenPedia\\TopTenPediaData\\TopTenPediaData.csproj",
+      "projectUniqueName": "C:\\Users\\DEEL\\Documents\\Top10Pedia\\Top10Pedia\\TopTenPediaData\\TopTenPediaData.csproj",
       "projectName": "TopTenPediaData",
-      "projectPath": "C:\\Users\\amohan\\Documents\\TopTenPedia\\TopTenPediaData\\TopTenPediaData.csproj",
-      "outputPath": "C:\\Users\\amohan\\Documents\\TopTenPedia\\TopTenPediaData\\obj\\",
+      "projectPath": "C:\\Users\\DEEL\\Documents\\Top10Pedia\\Top10Pedia\\TopTenPediaData\\TopTenPediaData.csproj",
+      "outputPath": "C:\\Users\\DEEL\\Documents\\Top10Pedia\\Top10Pedia\\TopTenPediaData\\obj\\",
       "projectStyle": "PackageReference",
       "originalTargetFrameworks": [
         "netcoreapp1.1"

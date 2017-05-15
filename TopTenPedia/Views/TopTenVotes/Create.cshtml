@@ -43,11 +43,27 @@
 					</tbody>
 					<tbody></tbody>
 				</table>*@
-<ul data-bind="template: {name:'listTemplate',foreach:AvailableOptions}"></ul>
+<ul class="list-group" data-bind="template: {name:'listTemplate',foreach:AvailableOptions}"></ul>
 <script id="listTemplate" type="text/html">
-	<li><input class="input-sm"  data-bind="value: name" /></li>
-	<li><input class="input-lg"  data-bind="value: Description" /></li>
-	<li><input class="input-sm"  data-bind="value: ImageURL" /></li>
+	<div class="row row-striped" >
+		<div class="col-lg-6 col-md-6">
+			<div class="form-group">
+				<label for="name">Name:</label>
+				<input class="input-sm" data-bind="value: name" id="Name" />
+			</div>
+			<div class="form-group">
+				<label for="Description">Description:</label>
+				<input class="input-lg" data-bind="value: Description" id="Description" />
+			</div>
+			<div class="form-group">
+				<label for="Image">Image:</label>
+				<input class="input-sm" data-bind="value: ImageURL" id="Image" />
+			</div>
+		</div>
+		<div class="col-lg-6 col-md-6">
+			<h1>Test</h1>
+		</div>
+	</div>
 </script>
 
 				<input type ="hidden"  name="Options" data-bind="value: ko.toJSON(AvailableOptions)"/>

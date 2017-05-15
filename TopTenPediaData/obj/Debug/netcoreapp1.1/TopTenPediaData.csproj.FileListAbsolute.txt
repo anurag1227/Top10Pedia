@@ -5,3 +5,10 @@ c:\users\amohan\documents\TopTenPedia\TopTenPediaData\obj\Debug\netcoreapp1.1\To
 c:\users\amohan\documents\TopTenPedia\TopTenPediaData\obj\Debug\netcoreapp1.1\TopTenPediaData.dll
 c:\users\amohan\documents\TopTenPedia\TopTenPediaData\obj\Debug\netcoreapp1.1\TopTenPediaData.pdb
 c:\users\amohan\documents\TopTenPedia\TopTenPediaData\obj\Debug\netcoreapp1.1\TopTenPediaData.csprojResolveAssemblyReference.cache
+C:\Users\DEEL\Documents\Top10Pedia\Top10Pedia\TopTenPediaData\bin\Debug\netcoreapp1.1\TopTenPediaData.deps.json
+C:\Users\DEEL\Documents\Top10Pedia\Top10Pedia\TopTenPediaData\bin\Debug\netcoreapp1.1\TopTenPediaData.dll
+C:\Users\DEEL\Documents\Top10Pedia\Top10Pedia\TopTenPediaData\bin\Debug\netcoreapp1.1\TopTenPediaData.pdb
+C:\Users\DEEL\Documents\Top10Pedia\Top10Pedia\TopTenPediaData\obj\Debug\netcoreapp1.1\TopTenPediaData.csprojResolveAssemblyReference.cache
+C:\Users\DEEL\Documents\Top10Pedia\Top10Pedia\TopTenPediaData\obj\Debug\netcoreapp1.1\TopTenPediaData.AssemblyInfo.cs
+C:\Users\DEEL\Documents\Top10Pedia\Top10Pedia\TopTenPediaData\obj\Debug\netcoreapp1.1\TopTenPediaData.dll
+C:\Users\DEEL\Documents\Top10Pedia\Top10Pedia\TopTenPediaData\obj\Debug\netcoreapp1.1\TopTenPediaData.pdb
