@@ -1,4 +1,4 @@
-@model TopTenPediaData.TopTenVote
+@model TopTenPedia.ViewModels.TopTenVoteViewModel
 
 @{
     ViewData["Title"] = "Details";
@@ -9,11 +9,52 @@
 <div>
     <h4 class="badge">Top Ten Vote</h4>
     <hr />
-   @Html.Partial("_SubmitVote")
+	<dl class="dl-horizontal">
+		<dt>
+			@Html.DisplayNameFor(model => model.Name)
+		</dt>
+		<dd>
+			@Html.DisplayFor(model => model.Name)
+		</dd>
+		<dt>
+			@Html.DisplayNameFor(model => model.Description)
+		</dt>
+		<dd>
+			@Html.DisplayFor(model => model.Description)
+		</dd>
+
+	</dl>
+	<form asp-action="Details">
+		<div asp-validation-summary="ModelOnly" class="text-danger"></div>
+		<div class="form-horizontal">
+			<div>
+				<ul class="list-group">
+					@foreach (var item in Model.Options)
+			{
+						<li class=".row-striped list-group-item">
+							@Html.RadioButtonFor(m => m.SelectedOptionId, item.Id, new { Text = item.Name })
+						<span>@item.Name</span>
+						<div class="progress">
+							<div class="progress-bar" role="progressbar" aria-valuenow=@(item.VoteCount * 100/Model.TotalVotes) aria-valuemin="0" aria-valuemax="100" style="width:@(item.VoteCount * 100 / Model.TotalVotes)%">
+								<span >@(item.VoteCount * 100 / Model.TotalVotes )%</span>
+							</div>
+						</div>
+					</li>
+
+					}
+				</ul>
+			</div>
+			<div class="form-group">
+				<div class="col-md-offset-2 col-md-10">
+					<input type="submit" value="Submit" class="btn btn-default" />
+				</div>
+			</div>
+		</div>
+	</form>
 
 	
 </div>
 <div>
-    <a asp-action="Edit" asp-route-id="@Model.ID">Edit</a> |
+     |
     <a asp-action="Index">Back to List</a>
 </div>

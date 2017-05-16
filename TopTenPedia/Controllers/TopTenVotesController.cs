@@ -8,6 +8,7 @@ using Microsoft.EntityFrameworkCore;
 using TopTenPedia.Data;
 using TopTenPediaData;
 using Newtonsoft.Json;
+using TopTenPedia.ViewModels;
 
 namespace TopTenPedia.Controllers
 {
@@ -41,7 +42,20 @@ namespace TopTenPedia.Controllers
                 return NotFound();
             }
 
-            return View(topTenVote);
+			var model = new TopTenVoteViewModel()
+			{
+				ID = topTenVote.ID,
+				Name = topTenVote.Name,
+				Description = topTenVote.Description,
+				Options = topTenVote.Options,
+				SelectedOptionId = 0,
+				TotalVotes = topTenVote.Options.Sum(o => o.VoteCount)
+			};
+			if (model.TotalVotes == 0)
+			{
+				model.TotalVotes = 1;
+			}
+			return View(model);
         }
 
         // GET: TopTenVotes/Create
@@ -121,8 +135,43 @@ namespace TopTenPedia.Controllers
             return View(topTenVote);
         }
 
-        // GET: TopTenVotes/Delete/5
-        public async Task<IActionResult> Delete(int? id)
+
+		[HttpPost]
+		public async Task<ActionResult> Details(TopTenVoteViewModel  viewmodel)
+		{
+			if (viewmodel.SelectedOptionId == 0)
+			{
+				ModelState.AddModelError("SelectOption","You must Select Atleast One Option");
+				
+			}
+
+			if (ModelState.IsValid)
+			{
+				try
+				{
+					Option newOption = _context.Options.Single(o=>o.Id == viewmodel.SelectedOptionId);
+					newOption.VoteCount++;
+					_context.Update(newOption);
+					await _context.SaveChangesAsync();
+				}
+				catch (DbUpdateConcurrencyException)
+				{
+					//if (!TopTenVoteExists(topTenVote.ID))
+					//{
+					//	return NotFound();
+					//}
+					//else
+					//{
+					//	throw;
+					//}
+				}
+				return RedirectToAction("Index");
+			}
+			return View();
+		}
+
+		// GET: TopTenVotes/Delete/5
+		public async Task<IActionResult> Delete(int? id)
         {
             if (id == null)
             {
